@@ -4,22 +4,22 @@
 
 
 // * вариант на основании примера из обучения
-// function isEnoughCapacity(products, containerSize) {
-//   let totalProducts = 0;
-//   const values = Object.values(products);
-//   for (const value of values) {
-//     totalProducts += value;
-//   }
-//   if (totalProducts <= containerSize) {
-//     return true;
-//   }
-//   else {
-//     return false;
-//   }
-// }
+function isEnoughCapacity(products, containerSize) {
+  let totalProducts = 0;
+  const values = Object.values(products);
+  for (const value of values) {
+    totalProducts += value;
+  }
+  if (totalProducts <= containerSize) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
 
 
-// * мой вариант нерабочий
+// * мой вариант нерабочий (на потом, разобраться на свежую голову что не так)
 // function isEnoughCapacity(products, containerSize) {
 //   let totalProducts = 0;
 //   for (const product in products) {
@@ -35,21 +35,21 @@
 
 // * вариант от чата, но я не помню чтоб мы учили "if (product in products)"
 // * вбудований оператор in, який перевіряє, чи є ключ прямо в об'єкті
-function isEnoughCapacity(products, containerSize) {
-  let totalProducts = 0;
+// function isEnoughCapacity(products, containerSize) {
+//   let totalProducts = 0;
 
-  for (const product in products) {
-    if (product in products) {
-      totalProducts += products[product];
-    }
-  }
-  if (totalProducts <= containerSize) {
-    return true;
-  }
-  else {
-    return false;
-  }
-}
+//   for (const product in products) {
+//     if (product in products) {
+//       totalProducts += products[product];
+//     }
+//   }
+//   if (totalProducts <= containerSize) {
+//     return true;
+//   }
+//   else {
+//     return false;
+//   }
+// }
 
 
 
